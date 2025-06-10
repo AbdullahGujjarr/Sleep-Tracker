@@ -2,6 +2,7 @@ import Guest from "@/components/Guest";
 import { currentUser } from "@clerk/nextjs/server";
 import AddNewRecord from "@/components/AddNewRecord";
 import RecordChart from "@/components/RecordChart";
+import AverageSleep from "@/components/AverageSleep";
 
 export default async function Page() {
 
@@ -49,12 +50,14 @@ export default async function Page() {
           </div>
           {/* Placeholder for AddSleepRecord */}
           <AddNewRecord />
+        
         </div>
 
         {/* Right Column */}
         <div className='space-y-6'>
           {/* Placeholder for RecordStats, RecentRecord, and Insights */}
           <RecordChart />
+            <AverageSleep />
      
         </div>
       </div>
