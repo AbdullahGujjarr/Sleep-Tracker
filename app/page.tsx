@@ -1,6 +1,7 @@
 import Guest from "@/components/Guest";
 import { currentUser } from "@clerk/nextjs/server";
 import AddNewRecord from "@/components/AddNewRecord";
+import RecordChart from "@/components/RecordChart";
 
 export default async function Page() {
 
@@ -53,6 +54,7 @@ export default async function Page() {
         {/* Right Column */}
         <div className='space-y-6'>
           {/* Placeholder for RecordStats, RecentRecord, and Insights */}
+          <RecordChart />
      
         </div>
       </div>
